@@ -84,7 +84,7 @@ class Game {
       'javascript'
     ],
       index = Math.floor(Math.random() * words.length);
-
+    console.log(words[index])
     return words[index];
   }
 
