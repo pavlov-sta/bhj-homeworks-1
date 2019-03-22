@@ -81,19 +81,12 @@ class Autocomplete {
         value: 'Содержимое атрибута value'
       }
   */
-    const arr = [
-    ];
-    let search = this.searchInput.value;
+    let arr = [];
     for (const option of this.input.options) {
-      if (option.textContent.indexOf(search) >= 0) {
+      if (option.textContent.indexOf(this.searchInput.value) >= 0) {
         arr.push({ text: option.innerHTML, value: option.value });
-        console.log(option.innerHTML);
-      }
-      if (this.searchInput.value == option.textContent) {
-        console.log(option.innerHTML)
       }
     }
-    console.log(arr)
     return arr;
   }
 }
