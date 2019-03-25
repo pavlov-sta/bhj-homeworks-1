@@ -89,3 +89,14 @@ body {
 .product-shadow {
   position: absolute;
 }
+
+.product__delet{
+  background: red;
+  padding: 10px 20px;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.product__delet:hover {
+  opacity: 0.8;
+}
