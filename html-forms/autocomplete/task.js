@@ -82,7 +82,7 @@ class Autocomplete {
       }
   */
     let arr = [];
-    for (const option of this.input.options) {
+    for (let option of this.input.options) {
       if (option.textContent.indexOf(this.searchInput.value) >= 0) {
         arr.push({ text: option.innerHTML, value: option.value });
       }
